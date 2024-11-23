@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Membership Plans - FitLife Gym</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .plan {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .plan:hover {
+            transform: translateY(-10px);
+        }
+
+        .plan h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .plan .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .plan ul li {
+            padding: 8px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .plan .cta-btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1.5rem;
+        }
+
+        .plan .cta-btn:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .plans {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .plan {
+                width: 80%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitLife Gym</h1>
+        <p>Your Fitness Journey Starts Here</p>
+    </header>
+
+    <div class="container">
+        <section class="plans-section">
+            <h2 class="section-title">Our Membership Plans</h2>
+
+            <div class="plans">
+                <div class="plan">
+                    <h2>Basic Membership</h2>
+                    <p class="price">INR2000/Month</p>
+                    <ul>
+                        <li>Unlimited gym access</li>
+                        <li>Access to cardio and strength equipment</li>
+                        <li>Locker rooms and showers</li>
+                        <li>Complimentary fitness assessment</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Join Now</a>
+                </div>
+
+                <div class="plan">
+                    <h2>Premium Membership</h2>
+                    <p class="price">INR3000/Month</p>
+                    <ul>
+                        <li>Everything in Basic, plus:</li>
+                        <li>Access to all group fitness classes</li>
+                        <li>Priority booking for classes</li>
+                        <li>10% off personal training</li>
+                        <li>Guest passes each month</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Join Now</a>
+                </div>
+
+            
+                <div class="plan">
+                    <h2>VIP Membership</h2>
+                    <p class="price">INR4500/Month</p>
+                    <ul>
+                        <li>Everything in Premium, plus:</li>
+                        <li>4 personalized training sessions</li>
+                        <li>Private workout areas</li>
+                        <li>Unlimited guest passes</li>
+                        <li>Free entry to wellness events</li>
+                    </ul>
+                    <a href="#" class="cta-btn">Join Now</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Your Gym Name]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
